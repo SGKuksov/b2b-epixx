@@ -21,6 +21,7 @@ export default () => {
     modals.forEach(item => {
       hideModal(item);
     });
+
     modal.classList.remove('programm__modal--hidden');
     const close = modal.querySelector('.programm__modal-close');
 
@@ -44,7 +45,8 @@ export default () => {
   programBtns.forEach(btn => {
     btn.addEventListener('click', e => {
       // const url = e.target.dataset.url;
-      const modal = e.target.nextSibling.nextSibling;
+      const parent = e.target.parentNode;
+      const modal = parent.querySelector('.programm__modal');
 
       showModal(modal);
     });

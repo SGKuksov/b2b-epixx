@@ -22,7 +22,8 @@ export default () => {
 
   programBtns.forEach(btn => {
     btn.addEventListener('click', e => {
-      const modal = e.target.nextSibling.nextSibling;
+      const parent = e.target.parentNode;
+      const modal = parent.querySelector('.faq__item-content');
 
       showModal(modal);
     });
