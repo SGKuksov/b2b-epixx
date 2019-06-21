@@ -1,9 +1,11 @@
-// import _ from 'lodash';
+import programm from '../../blocks/programm/programm.js';
+import form from '../../blocks/form/form.js';
+import faq from '../../blocks/faq/faq.js';
 
-require('../../blocks/page-header/page-header');
+function ready() {
+  programm();
+  form();
+  faq();
+}
 
-// _.now();
-
-const a = [...[1, ...[2, ...[3]]], 4];
-
-console.log(a);
+document.addEventListener('DOMContentLoaded', ready);

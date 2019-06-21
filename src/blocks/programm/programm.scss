@@ -1,6 +1,6 @@
 .programm {
   padding-bottom: 93px;
-  
+
   &__title {
     margin-bottom: 42px;
     text-align: center;
@@ -56,7 +56,69 @@
   }
 
   &__modal {
-    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    border: 2px dashed #a3189d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fff;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__modal-head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 30px;
+  }
+
+  &__modal-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  &__modal-content {
+    padding: 40px;
+    padding-top: 0;
+
+    ol {
+      padding-left: 20px;
+    }
+  }
+
+  &__modal-close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border: 0;
+    background-color: $trs;
+
+    &:focus {
+      outline: 0;
+    }
+
+    svg {
+      width: 18px;
+      height: 19px;
+      stroke: #262626;
+      transition: 300ms ease-in-out;
+    }
+
+    &:hover {
+      svg {
+        stroke: #db4545;
+        transition: 300ms ease-in-out;  
+      }
+    }
   }
 
   &__btn-block {

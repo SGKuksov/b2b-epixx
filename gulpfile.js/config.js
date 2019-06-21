@@ -33,6 +33,11 @@ module.exports = {
     dest: `${dest}/js/`,
     watch: [`src/assets/js/**/*.js`, `src/blocks/**/*.js`]
   },
+  static: {
+    src: `${src}/static/*.{js,json}`,
+    dest: `${dest}/js/`,
+    watch: [`src/assets/js/**/*.js`, `src/blocks/**/*.js`]
+  },
   img: {
     src: `${src}/assets/img/**/*.{jpg,jpeg,png,svg,webp}`,
     dest: `${dest}/img/`,

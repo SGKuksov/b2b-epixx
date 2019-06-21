@@ -45,3 +45,5 @@ if (config.isDev) {
     // deploy
   );
 }
+
+exports.deploy = deploy;
