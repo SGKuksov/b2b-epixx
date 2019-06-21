@@ -11,6 +11,7 @@ const { fonts } = require('./fonts');
 // const { video } = require('./video');
 const { serve } = require('./serve');
 const { svgSprite } = require('./svgSprite');
+const { deploy } = require('./deploy');
 const config = require('./config');
 
 if (config.isDev) {
@@ -40,6 +41,7 @@ if (config.isDev) {
       javascript,
       // video,
       scss
-    )
+    ),
+    // deploy
   );
 }
