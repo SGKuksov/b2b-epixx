@@ -1,0 +1,20 @@
+.partners {
+  padding-top: 70px;
+  padding-bottom: 36px;
+
+  &__title {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 34px;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    div {
+      margin: 30px;
+    }
+  }
+}

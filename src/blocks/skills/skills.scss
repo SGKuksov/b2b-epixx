@@ -1,3 +1,23 @@
 .skills {
+  padding-top: 40px;
+  padding-bottom: 70px;
 
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    background-color: $violet;
+    padding: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  &__item-title {
+    color: #ffffff;
+    margin-bottom: 21px;
+  }
+  &__item-text {
+    color: #ffffff;
+  }
 }

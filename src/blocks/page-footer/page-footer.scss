@@ -1,0 +1,72 @@
+.page-footer {
+  background: #3a0c50;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__logo {
+    left: -10px;
+    top: -10px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    &:hover {
+      color: #eda539;
+      text-decoration: none;
+      transition: 300ms ease-in-out;
+    }
+  }
+
+  &__phone,
+  &__mail,
+  &__address {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__about-link {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  &__socials {
+    display: flex;
+  }
+  &__socials-item {
+    a svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  ul.page-footer__nav {
+    &--2 {
+      padding-top: 55px;
+    }
+
+    li {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__nav-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    color: rgba(255, 255, 255, 0.85);
+  }
+}

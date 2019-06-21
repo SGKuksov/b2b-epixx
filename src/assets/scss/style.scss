@@ -1,13 +1,21 @@
+@import 'bootstrap/bootstrap';
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
 @import 'globals';
 
-@import 'bootstrap/bootstrap';
+@import '../../blocks/btn/btn';
+@import '../../blocks/input/input';
 @import '../../blocks/page-header/page-header';
 @import '../../blocks/promo/promo';
 @import '../../blocks/features/features';
 @import '../../blocks/skills/skills';
-
+@import '../../blocks/programm/programm';
+@import '../../blocks/results/results';
+@import '../../blocks/organizations/organizations';
+@import '../../blocks/form/form';
+@import '../../blocks/partners/partners';
+@import '../../blocks/faq/faq';
+@import '../../blocks/contacts/contacts';
 
 @import '../../blocks/page-footer/page-footer';

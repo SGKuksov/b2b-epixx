@@ -1,0 +1,71 @@
+.programm {
+  padding-bottom: 93px;
+  
+  &__title {
+    margin-bottom: 42px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    height: 76px;
+    // line-height: 76px;
+  }
+
+  &__modal-btn {
+    margin: 0;
+    padding: 0;
+    background-color: $trs;
+    box-shadow: none;
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #bebebe;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.85);
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      border: 2px dashed #3a0c50;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+    &:active {
+      border: 2px dashed #a3189d;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+  }
+
+  &__modal {
+    display: none;
+  }
+
+  &__btn-block {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    text-align: center;
+  }
+}

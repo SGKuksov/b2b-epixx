@@ -1,8 +1,50 @@
 .page-header {
-  min-height: 150px;
-  background-color: #ccc;
+  min-height: 115px;
+  background-color: $violet;
+  padding-top: 30px;
 
   &__inner {
-    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__logo {
+    margin-right: 70px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+  }
+
+  &__address {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-right: 50px;
+  }
+
+  &__phone,
+  &__email {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-right: 50px;
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    right: 10px;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      color: #eda539;
+      transition: 300ms ease-in-out;
+    }
   }
 }

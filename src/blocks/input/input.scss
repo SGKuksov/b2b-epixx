@@ -1,0 +1,58 @@
+.input {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: $trs;
+  box-shadow: none;
+  border: 1px solid $trs;
+  background: #efefef;
+  transition: 300ms ease-in-out;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 18px;
+  padding-right: 18px;
+  /* or 133% */
+
+  color: rgba(0, 0, 0, 0.85);
+
+  &:focus,
+  &.focus {
+    box-shadow: none;
+    outline: 0;
+    background: #efefef;
+    border: 1px solid #3a0c50;
+    transition: 300ms ease-in-out;
+  }
+
+  &:hover,
+  &.hover {
+    background: #efefef;
+    border: 1px solid #bebebe;
+    transition: 300ms ease-in-out;
+  }
+
+  &.error {
+    background: #efefef;
+    border: 1px solid #d00707;
+    transition: 300ms ease-in-out;
+  }
+
+  &::-moz-placeholder {
+    color: #9b9b9b;
+  } 
+  &::-webkit-input-placeholder {
+    color: #9b9b9b;
+  }
+  &:-ms-input-placeholder {
+    color: #9b9b9b;
+  }
+  &::-ms-input-placeholder {
+    color: #9b9b9b;
+  }
+  &::placeholder {
+    color: #9b9b9b;
+  }
+}
