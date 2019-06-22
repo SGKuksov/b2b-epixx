@@ -3,6 +3,12 @@
   padding-top: 45px;
   padding-bottom: 100px;
 
+  label.error {
+    color: #d00707;
+    font-size: 14px;
+    transition: 300ms ease-in-out;
+  }
+
   &__title {
     text-align: center;
     color: rgba(255, 255, 255, 0.85);

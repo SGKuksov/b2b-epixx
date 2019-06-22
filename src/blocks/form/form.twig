@@ -24,16 +24,17 @@
                 составлению программы.
               </p>
 
-              <form class="form-block">
+              <form class="form-block" id="formBlock">
                 <div class="form-block__row">
                   <div class="form-block__item">
-                    <label for="">Ваше имя</label> <input class="input" type="text" />
+                    <label for="name">Ваше имя</label> 
+                    <input id="name" class="input" type="text" name="name" required/>
                   </div>
 
                   <div class="form-block__item">
                     <label for="">Направление обучения</label>
 
-                    <select placeholder="Выберите вариант из списка" class="input js-choice" name="" id="">
+                    <select placeholder="Выберите вариант из списка" class="input js-choice" name="" id="" required>
                       <option disabled selected>Выберите вариант из списка</option>
                       <option value="веб-разработка">веб-разработка</option>
                       <option value="веб-дизайн">веб-дизайн</option>
@@ -46,19 +47,19 @@
 
                 <div class="form-block__row">
                   <div class="form-block__item">
-                    <label for="">Телефон</label>
-                    <input class="input" type="text" placeholder="+7 (___)___-__-__" />
+                    <label for="phone">Телефон</label>
+                    <input id="phone" class="input" type="tel" name="phone" placeholder="+7 (___)___-__-__" required />
                   </div>
 
                   <div class="form-block__item">
-                    <label for="">Почта</label>
-                    <input class="input" type="text" placeholder="info@yandex.com" />
+                    <label for="mail">Почта</label>
+                    <input id="mail" class="input" type="mail" name="email" placeholder="info@yandex.com" required/>
                   </div>
                 </div>
 
                 <div class="form-block__item form-block__item--last">
-                  <label for="">Уточнения о целях и задачах обучения</label>
-                  <input class="input" type="text" />
+                  <label for="desc">Уточнения о целях и задачах обучения</label>
+                  <input id="desc" class="input" type="text" />
                 </div>
 
                 <p class="form-block__privacy">

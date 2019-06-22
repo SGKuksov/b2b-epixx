@@ -12,6 +12,7 @@ const { fonts } = require('./fonts');
 const { serve } = require('./serve');
 const { svgSprite } = require('./svgSprite');
 const { deploy } = require('./deploy');
+const { static } = require('./static');
 const config = require('./config');
 
 if (config.isDev) {
@@ -25,7 +26,8 @@ if (config.isDev) {
       twig,
       javascript,
       // video,
-      scss
+      scss,
+      static
     ),
     serve
   );
@@ -40,8 +42,9 @@ if (config.isDev) {
       twig,
       javascript,
       // video,
-      scss
-    ),
+      scss,
+      static
+    )
     // deploy
   );
 }
